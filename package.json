@@ -4,7 +4,9 @@
   "description": "[【React/Typescript】Dockerでマニュアル環境構築 2023](https://zenn.dev/masterak/articles/react-typescript-2023)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "WATCHPACK_POLLING=true webpack serve --open"
   },
   "keywords": [],
   "author": "",
