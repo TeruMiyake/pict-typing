@@ -1,0 +1,38 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "plugin:react-hooks/recommended",
+   	 "prettier"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+			"jsx": true
+		},
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    },
+    "settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			//importするファイルをjsだけではなく、tsを含むファイルを許可する
+			"node": {
+				"paths": ["src"],
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	}
+}
